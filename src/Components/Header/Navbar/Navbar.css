@@ -1,0 +1,52 @@
+.navbar-bg {
+  padding-bottom: 20px;
+  background-image: url("../../../images/Header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.brand-name {
+  font-weight: 600;
+  font-size: 37px;
+  text-decoration: none;
+  margin-right: 120px;
+}
+
+@media only screen and (min-width: 520px) {
+  .brand-name {
+    padding-left: 100px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .brand-name {
+    margin-right: 190px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .brand-name {
+    margin-right: 240px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .brand-name {
+    margin-right: 460px;
+  }
+}
+
+.tabStyle {
+  margin-right: 25px;
+}
+.btn-color {
+  color: white;
+}
+.navColor {
+  color: white;
+}
+
+@media only screen and (max-width: 520px) {
+  .tog-btn {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

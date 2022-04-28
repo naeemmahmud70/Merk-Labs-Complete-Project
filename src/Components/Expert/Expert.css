@@ -1,0 +1,13 @@
+.expert {
+  font-weight: 600;
+  font-size: 29px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #618dff;
+}
+@media only screen and (min-width: 520px) {
+  .expert-div {
+    position: relative;
+    bottom: 400px;
+  }
+}

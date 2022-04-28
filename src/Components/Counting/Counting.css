@@ -1,0 +1,129 @@
+@media only screen and (min-width: 520px) {
+  .company-bg {
+    background-image: url("../../images/Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    position: relative;
+    bottom: 50px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .company-bg {
+    background-image: url("../../images/Rectangle\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* position: relative;
+    bottom: 50px; */
+  }
+}
+.blue-bg-color {
+  background-color: #03205f;
+}
+
+.counting-header-bg {
+  height: auto;
+  background-image: url("../../images//Blur.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: auto;
+  background-color: #03205f;
+  position: relative;
+  bottom: 100px;
+}
+.header-height {
+  height: auto;
+}
+
+.Zindex {
+  position: relative;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 520px) {
+  .header-text-style {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.747);
+  }
+}
+@media only screen and (min-width: 520px) {
+  .header-text-style {
+    font-size: 31px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.747);
+  }
+  .header-text {
+    font-weight: 700;
+    font-size: 47px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .header-text {
+    font-weight: 550;
+    font-size: 37px;
+    line-height: 48px;
+    color: #ffffff;
+  }
+}
+
+.justifyText {
+  text-align: justify;
+}
+.glass-bg {
+  height: auto;
+  color: white;
+  background-image: url("../../images//Glass.png");
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: contain;
+}
+.m-bottom {
+  margin-bottom: 70px;
+}
+.count {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 50px;
+  color: #ffffff;
+  text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
+}
+.service {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  color: #f3f3f3;
+}
+.countMarginTop {
+  margin-top: 35px;
+}
+.count-position {
+  position: relative;
+  top: 30px;
+  left: 20px;
+}
+
+@media only screen and (max-width: 520px) {
+  .count {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #ffffff;
+    text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
+  }
+  .service {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #f3f3f3;
+  }
+  .lineHeight {
+    height: 350px;
+  }
+}

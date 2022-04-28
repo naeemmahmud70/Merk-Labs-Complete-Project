@@ -1,0 +1,35 @@
+import React from "react";
+import "./App.css";
+import Audit from "./Components/Audit/Audit";
+import Counting from "./Components/Counting/Counting";
+import Dapps from "./Components/Dapps/Dapps";
+import Defi from "./Components/Defi/Defi";
+import Expert from "./Components/Expert/Expert";
+import Header from "./Components/Header/Header";
+import JoinUs from "./Components/JoinUs/JoinUs";
+import LaunchPad from "./Components/LauchPad/LaunchPad";
+import OurTeam from "./Components/OurTeam/OurTeam";
+import Projects from "./Components/Projects/Projects";
+import ReadArticle from "./Components/ReadArticle/ReadArticle";
+import Smart from "./Components/SmartContract/Smart";
+
+function App() {
+  return (
+    <div className="blue-bg-color">
+      <Header></Header>
+      <Counting></Counting>
+      <Defi></Defi>
+      <Dapps></Dapps>
+      <Audit></Audit>
+      <Expert></Expert>
+      <Smart></Smart>
+      <LaunchPad></LaunchPad>
+      <ReadArticle></ReadArticle>
+      <OurTeam></OurTeam>
+      <Projects></Projects>
+      <JoinUs></JoinUs>
+    </div>
+  );
+}
+
+export default App;

@@ -1,0 +1,29 @@
+.article-bg {
+  background: #0b2d7594;
+  margin-left: 100px;
+}
+.articleImg {
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.article {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 520px) {
+  .article-text {
+    width: 50%;
+  }
+  .margin-Left {
+    margin-left: 100px;
+    position: relative;
+    left: 100px;
+    margin-top: -400px;
+  }
+  .neon4{
+    width: 25%;
+    margin-bottom: -150px;
+    margin-top: -100px;
+  }
+}
