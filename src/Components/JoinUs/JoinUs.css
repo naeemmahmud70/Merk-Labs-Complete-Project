@@ -14,6 +14,9 @@
     padding: 10px;
     padding-right: 80px;
   }
+  .MarginTop {
+    margin-top: 150px;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -28,15 +31,8 @@
 .joinUs {
   background-color: #0b2d7594;
 }
-/* .tab {
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-  padding-right: 80px;
-} */
-.marginTop {
-  margin-top: 150px;
-}
+
+
 .top-border {
   border-top: 4px solid white;
   width: 90%;

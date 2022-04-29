@@ -1,7 +1,6 @@
 import React from "react";
-import './ProjectCard.css'
+import "./ProjectCard.css";
 import projectImage from "../../../images/projectImage.png";
-import button from "../../../images/Button Explore More.png";
 
 const ProjectCard = ({ details }) => {
   const { projectTitle, projectDescription } = details;
@@ -13,7 +12,7 @@ const ProjectCard = ({ details }) => {
         <div className="card-details">
           <p className="text-white">{projectTitle}</p>
           <p className="text-secondary">{projectDescription}</p>
-          <img src={button} alt="" />
+          <button className="btn-bg text-white fw-bold">Explore More</button>
         </div>
       </div>
     </div>

@@ -3,34 +3,43 @@
   background-image: url("../../../images/Header-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: cover;
+  height: auto;
+  z-index: 3;
+  background-color: #03205f;
 }
 .brand-name {
   font-weight: 600;
   font-size: 37px;
   text-decoration: none;
-  margin-right: 120px;
+  margin-right: 110px;
 }
 
 @media only screen and (min-width: 520px) {
   .brand-name {
-    padding-left: 100px;
+    padding-left: 90px;
   }
 }
 
 @media only screen and (min-width: 375px) {
   .brand-name {
-    margin-right: 190px;
+    margin-right: 180px;
   }
 }
 @media only screen and (min-width: 425px) {
   .brand-name {
-    margin-right: 240px;
+    margin-right: 225px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .brand-name {
     margin-right: 460px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .brand-name {
+    margin: auto;
   }
 }
 
@@ -49,4 +58,8 @@
     display: flex;
     justify-content: flex-end;
   }
+}
+.nav-top {
+  position: fixed;
+  top: 0;
 }

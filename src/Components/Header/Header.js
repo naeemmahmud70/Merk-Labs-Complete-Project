@@ -5,7 +5,7 @@ import './Header.css'
 
 const Header = () => {
   return (
-    <div className="header-bg row">
+    <div id="home" className="header-bg row">
       <Navbar></Navbar>
       <MainHeader></MainHeader>
     </div>

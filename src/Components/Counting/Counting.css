@@ -14,8 +14,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* position: relative;
-    bottom: 50px; */
   }
 }
 .blue-bg-color {
@@ -43,7 +41,7 @@
 
 @media only screen and (max-width: 520px) {
   .header-text-style {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     margin-top: 25px;
     color: rgba(255, 255, 255, 0.747);
@@ -67,7 +65,7 @@
 @media only screen and (max-width: 520px) {
   .header-text {
     font-weight: 550;
-    font-size: 37px;
+    font-size: 35px;
     line-height: 48px;
     color: #ffffff;
   }

@@ -5,6 +5,12 @@
   letter-spacing: 0.1em;
   color: #618dff;
 }
-.team{
+/* .team{
     margin-top: 200px;
+} */
+
+@media only screen and (min-width: 520px) {
+  .team{
+    margin-top: 200px;
+}
 }

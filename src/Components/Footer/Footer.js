@@ -4,7 +4,7 @@ import vector from "../../images/Vector.png";
 
 const Footer = () => {
   return (
-    <div className="container">
+    <div className="container MarginTop">
       <div className="row mt-5 p-4">
         <div className="col-md-3">
           <div className="d-flex">
@@ -12,7 +12,7 @@ const Footer = () => {
             <h5 className="text-white fw-bold px-4">Merk</h5>
           </div>
           <div className="my-4">
-            <small className="text-secondary">
+            <small className="footer-text">
               Copyright © 2021 <br /> Design By Merk Labs
             </small>
           </div>

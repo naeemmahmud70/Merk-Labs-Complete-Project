@@ -6,7 +6,7 @@ import neon4 from "../../images/Neon 4.png";
 
 const ReadArticle = () => {
   return (
-    <div className="row blue-bg-color marginLeft p-4">
+    <div id="blog" className="row blue-bg-color marginLeft p-4">
       <div className="d-flex justify-content-end">
         <img className="img-fluid neon4" src={neon4} alt="" />
       </div>

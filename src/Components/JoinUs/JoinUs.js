@@ -2,7 +2,6 @@ import React from "react";
 import "./JoinUs.css";
 import code from "../../images/codee.png";
 import neon6 from "../../images/Neon 6.png";
-import button from "../../images/Button Explore More.png";
 
 const JoinUs = () => {
   return (
@@ -25,11 +24,11 @@ const JoinUs = () => {
             </p>
           </div>
           <div>
-            <img className="img-fluid mt-4" src={button} alt="" />
+            <button className="btn-bg text-white fw-bold mt-4">Explore More</button>
           </div>
         </div>
         <div className="col-md-6 p-4">
-          <div className="d-flex justify-content-end marginTop">
+          <div className="d-flex justify-content-end MarginTop">
             <a className="tab" href="">
               Node
             </a>

@@ -3,8 +3,6 @@ import "./Contact.css";
 import call from "../../images/Frame 9.png";
 import message from "../../images/Frame 10.png";
 import contact from "../../images/Contact Form.png";
-import quote from "../../images/Rectangle 54.png";
-import ask from "../../images/Rectangle 55.png";
 
 const Contact = () => {
   return (
@@ -46,16 +44,19 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="row p-5 joinUs my-5 m-1 rounded shadow">
-        <div className="col-md-8">
-          <h3 className="header-text">
-            We've prepared everything, it's time for you to tell the problem
-          </h3>
-        </div>
-        <div className="col-md-4">
-          <div className="mt-4">
-            <button className="btn-bg text-white fw-bold">Send Quote</button>
-            <button className="btn-bg text-white fw-bold">Ask</button>
+
+      <div className="MarginTop">
+        <div className="row p-5 joinUs my-5 m-1 rounded shadow ">
+          <div className="col-md-8">
+            <h3 className="header-text">
+              We've prepared everything, it's time for you to tell the problem
+            </h3>
+          </div>
+          <div className="col-md-4">
+            <div className="mt-4">
+              <button className="btn-bg text-white fw-bold">Send Quote</button>
+              <button className="btn-bg text-white fw-bold">Ask</button>
+            </div>
           </div>
         </div>
       </div>

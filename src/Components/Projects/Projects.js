@@ -31,7 +31,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="container p-5 mt-5">
+    <div id="Projects" className="container p-5 mt-5">
       <div className="row">
         <div className="col-md-6">
           <p className="projects">Projects</p>

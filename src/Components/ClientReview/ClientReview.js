@@ -38,7 +38,7 @@ const ClientReview = () => {
   ];
   return (
     <div>
-      <div className="container">
+      <div className="container MarginTop">
         <div className="text-center mt-5">
           <p className="client-review">Our Client Review</p>
           <p className="text-white">
