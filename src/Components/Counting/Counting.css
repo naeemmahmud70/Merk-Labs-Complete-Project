@@ -12,8 +12,8 @@
   .company-bg {
     background-image: url("../../images/Rectangle\ 1.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position: cover;
   }
 }
 .blue-bg-color {

@@ -46,7 +46,7 @@ const Contact = () => {
       </div>
 
       <div className="MarginTop">
-        <div className="row p-5 joinUs my-5 m-1 rounded shadow ">
+        <div className="row join-Us joinUs my-5 m-1 rounded shadow ">
           <div className="col-md-8">
             <h3 className="header-text">
               We've prepared everything, it's time for you to tell the problem

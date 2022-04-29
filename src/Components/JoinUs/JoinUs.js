@@ -5,7 +5,7 @@ import neon6 from "../../images/Neon 6.png";
 
 const JoinUs = () => {
   return (
-    <div className="row p-4 ">
+    <div className="row">
       <div className="d-flex justify-content-end">
         <img className="img-fluid neon6" src={neon6} alt="" />
       </div>

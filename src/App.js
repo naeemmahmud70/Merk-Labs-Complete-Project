@@ -9,6 +9,7 @@ import Defi from "./Components/Defi/Defi";
 import Expert from "./Components/Expert/Expert";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import Navbar from "./Components/Header/Navbar/Navbar";
 import JoinUs from "./Components/JoinUs/JoinUs";
 import LaunchPad from "./Components/LauchPad/LaunchPad";
 import OurTeam from "./Components/OurTeam/OurTeam";
@@ -19,7 +20,8 @@ import WhyBest from "./Components/WhyBest/WhyBest";
 
 function App() {
   return (
-    <div className="blue-bg-color">
+    <div className="blue-bg-color container-fluid">
+      <Navbar></Navbar>
       <Header></Header>
       <Counting></Counting>
       <Defi></Defi>
