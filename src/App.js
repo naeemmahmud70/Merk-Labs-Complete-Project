@@ -2,10 +2,12 @@ import React from "react";
 import "./App.css";
 import Audit from "./Components/Audit/Audit";
 import ClientReview from "./Components/ClientReview/ClientReview";
+import Contact from "./Components/Contact/Contact";
 import Counting from "./Components/Counting/Counting";
 import Dapps from "./Components/Dapps/Dapps";
 import Defi from "./Components/Defi/Defi";
 import Expert from "./Components/Expert/Expert";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import JoinUs from "./Components/JoinUs/JoinUs";
 import LaunchPad from "./Components/LauchPad/LaunchPad";
@@ -32,6 +34,8 @@ function App() {
       <JoinUs></JoinUs>
       <WhyBest></WhyBest>
       <ClientReview></ClientReview>
+      <Contact></Contact>
+      <Footer></Footer>
     </div>
   );
 }

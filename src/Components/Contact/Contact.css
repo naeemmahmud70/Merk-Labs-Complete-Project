@@ -1,0 +1,17 @@
+.contact {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.1em;
+  color: #16fcd2;
+}
+.btn-bg {
+  background: url("../../images/Rectangle\ 54.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 20px;
+  border: 0;
+  margin: 10px;
+  width: 160px;
+}
