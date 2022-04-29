@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import Audit from "./Components/Audit/Audit";
+import ClientReview from "./Components/ClientReview/ClientReview";
 import Counting from "./Components/Counting/Counting";
 import Dapps from "./Components/Dapps/Dapps";
 import Defi from "./Components/Defi/Defi";
@@ -12,6 +13,7 @@ import OurTeam from "./Components/OurTeam/OurTeam";
 import Projects from "./Components/Projects/Projects";
 import ReadArticle from "./Components/ReadArticle/ReadArticle";
 import Smart from "./Components/SmartContract/Smart";
+import WhyBest from "./Components/WhyBest/WhyBest";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
       <OurTeam></OurTeam>
       <Projects></Projects>
       <JoinUs></JoinUs>
+      <WhyBest></WhyBest>
+      <ClientReview></ClientReview>
     </div>
   );
 }

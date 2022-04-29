@@ -4,7 +4,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar-bg sticky-top t-0">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light blue-bg-color">
         <div class="container-fluid">
           <div className="d-flex justify-content-between">
             <a class=" text-white brand-name" href="#">
