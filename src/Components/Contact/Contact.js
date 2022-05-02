@@ -32,15 +32,46 @@ const Contact = () => {
               </div>
               <div className="px-4">
                 <p className="text-secondary">Email</p>
-                <h5 className="text-white">support@MerkLabs.tld</h5>
+                <h6 className="text-white">support@MerkLabs.tld</h6>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="col-md-6">
-          <div className="text-center px-5 pt-4">
+        <div className="col-md-6 d-flex justify-content-center align-items-center">
+          {/* <div className="text-center px-5 pt-4">
             <img className="img-fluid" src={contact} alt="" />
+          </div> */}
+          <div className="shadow rounded message-form p-5">
+            <form action="">
+              <div className="row">
+                <div className="col-md-6 input-div">
+                  <span className="text-secondary">Name</span>
+                  <input className="form-input input-hight" type="text" />
+                </div>
+                <div className="col-md-6 input-div">
+                  <span className="text-secondary">Email</span>
+                  <input className="form-input input-hight" type="text" />
+                </div>
+              </div>
+
+              <div className="input-div">
+                <span className="text-secondary">Subject</span>
+                <input className="form-input input-hight" type="text" />
+              </div>
+              <div className="input-div">
+                <span className="text-secondary">Message</span>
+                <textarea
+                  className="form-input"
+                  name=""
+                  id=""
+                  rows="6"
+                ></textarea>
+              </div>
+              <div className="text-center ">
+                <button className="btn-bg text-white fw-bold mt-3">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

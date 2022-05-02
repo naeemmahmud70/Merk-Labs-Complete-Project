@@ -5,10 +5,12 @@
   color: #618dff;
 }
 .review-card {
-  background-image: url("../../images/Glass\ Box\ \(1\).png");
+  background-image: url("../../images/Glass\ Box.png");
   background-repeat: no-repeat;
   background-position: cover;
   background-size: cover;
+  border-right: 2px solid rgba(245, 245, 245, 0.734);
+  border-radius: 10px;
 }
 .textWhite{
     color: rgba(255, 255, 255, 0.582);

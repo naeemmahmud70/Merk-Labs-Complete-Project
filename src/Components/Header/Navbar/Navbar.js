@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light navbar-bg sticky-top t-0 row">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-bg sticky-top t-0">
       <div class="container-fluid">
         <a class="brand-name text-white" href="#">
           Merka

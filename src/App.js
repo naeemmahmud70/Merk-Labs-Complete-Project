@@ -8,7 +8,7 @@ import Dapps from "./Components/Dapps/Dapps";
 import Defi from "./Components/Defi/Defi";
 import Expert from "./Components/Expert/Expert";
 import Footer from "./Components/Footer/Footer";
-import Header from "./Components/Header/Header";
+import MainHeader from "./Components/Header/MainHeader/MainHeader";
 import Navbar from "./Components/Header/Navbar/Navbar";
 import JoinUs from "./Components/JoinUs/JoinUs";
 import LaunchPad from "./Components/LauchPad/LaunchPad";
@@ -20,24 +20,26 @@ import WhyBest from "./Components/WhyBest/WhyBest";
 
 function App() {
   return (
-    <div className="blue-bg-color container-fluid">
+    <div className="blue-bg-color">
       <Navbar></Navbar>
-      <Header></Header>
-      <Counting></Counting>
-      <Defi></Defi>
-      <Dapps></Dapps>
-      <Audit></Audit>
-      <Expert></Expert>
-      <Smart></Smart>
-      <LaunchPad></LaunchPad>
-      <ReadArticle></ReadArticle>
-      <OurTeam></OurTeam>
-      <Projects></Projects>
-      <JoinUs></JoinUs>
-      <WhyBest></WhyBest>
-      <ClientReview></ClientReview>
-      <Contact></Contact>
-      <Footer></Footer>
+      <MainHeader></MainHeader>
+      <div className="container-fluid">
+        <Counting></Counting>
+        <Defi></Defi>
+        <Dapps></Dapps>
+        <Audit></Audit>
+        <Expert></Expert>
+        <Smart></Smart>
+        <LaunchPad></LaunchPad>
+        <ReadArticle></ReadArticle>
+        <OurTeam></OurTeam>
+        <Projects></Projects>
+        <JoinUs></JoinUs>
+        <WhyBest></WhyBest>
+        <ClientReview></ClientReview>
+        <Contact></Contact>
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

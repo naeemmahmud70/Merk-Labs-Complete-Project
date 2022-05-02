@@ -1,10 +1,13 @@
 .article-bg {
   background: #0b2d7594;
-  margin-left: 100px;
+  background-size: 90%;
 }
+
 .articleImg {
   margin-top: -100px;
+  margin-left: -50px;
 }
+
 .article {
   text-decoration: underline;
   font-size: 25px;
@@ -14,14 +17,26 @@
   .article-text {
     width: 50%;
   }
+
   .margin-Left {
     margin-left: 100px;
     position: relative;
     margin-top: -400px;
+    width: 40%;
   }
-  .neon4{
+
+  .neon4 {
     width: 25%;
     margin-bottom: -150px;
     margin-top: -100px;
   }
+  .articleImg {
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+}
+
+.margin-Left {
+width: 90%;
 }

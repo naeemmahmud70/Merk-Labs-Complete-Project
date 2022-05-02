@@ -5,7 +5,7 @@
     background-size: 90%;
     background-position: center;
     position: relative;
-    bottom: 50px;
+    bottom: 80px;
   }
 }
 @media only screen and (max-width: 520px) {
@@ -28,7 +28,7 @@
   background-size: auto;
   background-color: #03205f;
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
 }
 .header-height {
   height: auto;
@@ -123,5 +123,25 @@
   }
   .lineHeight {
     height: 350px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .lineHeight {
+    height: 300px;
+  }
+  .count {
+    margin-top: -20px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    color: #ffffff;
+    text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
+  }
+  .service {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #f3f3f3;
   }
 }

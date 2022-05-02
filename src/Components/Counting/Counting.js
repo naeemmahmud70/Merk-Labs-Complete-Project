@@ -32,7 +32,7 @@ const Counting = () => {
           <div className="col-md-4 glass-bg">
             <div className="m-bottom">
               <div className="d-flex count-position">
-                <div className="glass">
+                <div>
                   <img className="lineHeight" src={line} alt="" />
                 </div>
                 <div className="mx-3">

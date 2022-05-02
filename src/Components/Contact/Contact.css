@@ -5,6 +5,7 @@
   letter-spacing: 0.1em;
   color: #16fcd2;
 }
+
 .btn-bg {
   background: url("../../images/Rectangle\ 54.png");
   background-repeat: no-repeat;
@@ -21,8 +22,30 @@
     padding: 40px;
   }
 }
+
 @media only screen and (max-width: 520px) {
   .join-Us {
     padding: 10px;
   }
+}
+
+.input-div {
+  padding-top: 20px;
+}
+
+.form-input {
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.message-form {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 14px;
+}
+
+.input-hight{
+  height: 40px;
 }

@@ -6,11 +6,15 @@ import packag from "../../../images/package.png";
 import Bitcoin from "../../../images/bitcoin-logo.png";
 import SocialIcon from "../../../images/Social Media Icon.png";
 import HeroWaves from "../../../images/Hero Waves.png";
+import twitter from "../../../images/Twiiter.png";
+import instagram from "../../../images/insta.png";
+import facebook from "../../../images/fb.png";
+import line from "../../../images/Line 2.png";
 
 const MainHeader = () => {
   return (
-    <div>
-      <div className="row mt-5">
+    <div id="home" className="header-bg">
+      <div className="row">
         <div className="col-md-7 col-12">
           <div className="d-flex justify-content-between">
             <div>
@@ -21,7 +25,7 @@ const MainHeader = () => {
                 <img className="stepper" src={Stepper} alt="" />
               </div>
             </div>
-            <div className="p-5">
+            <div className="p-5 banner-text">
               <div>
                 <h1 className="top-header-text">
                   MERKLABS BLOCKCHAIN DEVELOPMENT AND{" "}
@@ -37,20 +41,34 @@ const MainHeader = () => {
           </div>
         </div>
 
-        <div className="col-md-5 col-12 bitcoin-bg">
-          <div className="d-flex">
+        <div className="col-md-4 col-12 bitcoin-bg p-4">
+          <div>
             <div>
               <img className="img-fluid bitcoin-Img" src={Bitcoin} alt="" />
-            </div>
-            <div>
-              <img className="img-fluid social-icon" src={SocialIcon} alt="" />
             </div>
           </div>
         </div>
 
-        <div className="row">
-          <img className="img-fluid" src={HeroWaves} alt="" />
+        <div className="col-md-1">
+          <div className="social-icons text-center">
+            <div>
+              <img className="img-fluid social-icon" src={twitter} alt="" />
+            </div>
+            <div>
+              <img className="img-fluid social-icon" src={instagram} alt="" />
+            </div>
+            <div>
+              <img className="img-fluid social-icon" src={facebook} alt="" />
+            </div>
+            <div className="line-div">
+              <img className="img-fluid social-icon" src={line} alt="" />
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div className="row">
+        <img className="img-fluid" src={HeroWaves} alt="" />
       </div>
     </div>
   );
