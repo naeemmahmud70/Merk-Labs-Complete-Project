@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ProjectCard.css";
 import projectImage from "../../../images/projectImage.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectCard = ({ details }) => {
   const { projectTitle, projectDescription } = details;
-  console.log(details);
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+}, [])
   return (
-    <div className="col-lg-5 col-md-6 col-sm-12 mt-5">
+    <div data-aos="fade-up" className="col-lg-5 col-md-6 col-sm-12 mt-5">
       <div className="text-center">
         <img className="img-fluid" src={projectImage} alt="" />
         <div className="card-details">

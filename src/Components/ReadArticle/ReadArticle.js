@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ReadArticle.css";
 import articleImg from "../../images/article-image.png";
 import slideArticle from "../../images/Group 45.png";
 import neon4 from "../../images/Neon 4.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ReadArticle = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <div id="blog" className="row p-4">
       <div className="d-flex justify-content-end">
@@ -13,7 +19,7 @@ const ReadArticle = () => {
 
       <div className="d-flex justify-content-end">
         <div className="row article-bg shadow margin-Left">
-          <div className="col-md-6">
+          <div data-aos="fade-down-right" className="col-md-6">
             <img className="img-fluid articleImg" src={articleImg} alt="" />
           </div>
 

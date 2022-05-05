@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Counting.css";
 import dots from "../../images/dots.png";
 import line from "../../images/Group 66.png";
 import company from "../../images/Company Logo (1).png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Counting = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+}, [])
+
   return (
     <div className="blue-bg-color row">
-      <div className="company-bg text-center p-5 Zindex">
+      <div data-aos="fade-up" className="company-bg text-center p-5 Zindex">
         <p className="fw-bold text-white">Trusted by Leading Dapp Teams and Enterprises</p>
         <img className="img-fluid" src={company} alt="" />
       </div>
@@ -29,7 +36,7 @@ const Counting = () => {
             </p>
           </div>
 
-          <div className="col-lg-4 glass-bg">
+          <div data-aos="fade-up" className="col-lg-4 glass-bg">
             <div className="m-bottom">
               <div className="d-flex count-position">
                 <div>

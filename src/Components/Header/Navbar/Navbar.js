@@ -20,7 +20,7 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto">
+          <div class="navbar-nav mx-auto d-sm-flex align-items-center">
             <a className="nav-link tabStyle text-white" href="#home">
               Home
             </a>

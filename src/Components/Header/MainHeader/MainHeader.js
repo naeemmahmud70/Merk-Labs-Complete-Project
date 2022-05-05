@@ -10,12 +10,19 @@ import twitter from "../../../images/Twiiter.png";
 import instagram from "../../../images/insta.png";
 import facebook from "../../../images/fb.png";
 import line from "../../../images/Line 2.png";
+import { useSpring, animated } from "react-spring";
 
 const MainHeader = () => {
+  const styles = useSpring({
+    loop: { reverse: true },
+    from: { y: 0 },
+    to: { y: 15 },
+    delay: 400,
+  });
   return (
     <div id="home" className="header-bg">
       <div className="row">
-        <div className="col-md-7 col-12">
+        <div className="col-lg-7 col-12">
           <div className="d-flex justify-content-between">
             <div>
               <div>
@@ -41,15 +48,17 @@ const MainHeader = () => {
           </div>
         </div>
 
-        <div className="col-md-4 col-12 bitcoin-bg p-4">
+        <div className="col-lg-4 col-md-10 bitcoin-bg p-4">
           <div>
             <div>
-              <img className="img-fluid bitcoin-Img" src={Bitcoin} alt="" />
+              <animated.div style={styles}>
+                <img className="img-fluid bitcoin-Img" src={Bitcoin} alt="" />
+              </animated.div>
             </div>
           </div>
         </div>
 
-        <div className="col-md-1">
+        <div className="col-lg-1 col-md-1">
           <div className="social-icons text-center">
             <div>
               <img className="img-fluid social-icon" src={twitter} alt="" />

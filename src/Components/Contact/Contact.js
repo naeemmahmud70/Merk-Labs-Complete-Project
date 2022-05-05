@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.css";
 import call from "../../images/Frame 9.png";
 import message from "../../images/Frame 10.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+}, [])
   return (
     <div className="container">
       <hr className="text-white" />
@@ -37,7 +42,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col-lg-6 d-flex justify-content-center align-items-center">
+        <div className="col-lg-6 d-flex justify-content-center align-items-center mt-5">
           <div className="shadow rounded message-form p-5">
             <form action="">
               <div className="row">
@@ -72,7 +77,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="MarginTop">
+      <div data-aos="fade-up" className="MarginTop">
         <div className="row join-Us joinUs my-5 m-1 rounded shadow ">
           <div className="col-md-8">
             <h3 className="header-text">

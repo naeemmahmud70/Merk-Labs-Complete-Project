@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ClientReview.css";
 import quatation from "../../images/quatation.png";
 import neon7 from "../../images/Neon 7.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ClientReview = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+}, [])
+
   const reviewDetails = [
     {
       id: 1,
@@ -50,7 +57,7 @@ const ClientReview = () => {
 
         <div className="row d-flex flex-wrap justify-content-center align-item-center mx-2 mt-5">
           {reviewDetails.map((details) => (
-            <div className="col-lg-4 col-md-7 col-sm-12 review-card m-5">
+            <div data-aos="fade-up" className="col-lg-4 col-md-7 col-sm-12 review-card m-5">
               <p className="text-secondary">
                 {details.date} | {details.Technology}
               </p>
