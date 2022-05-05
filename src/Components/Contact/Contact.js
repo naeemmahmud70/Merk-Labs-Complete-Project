@@ -2,14 +2,13 @@ import React from "react";
 import "./Contact.css";
 import call from "../../images/Frame 9.png";
 import message from "../../images/Frame 10.png";
-import contact from "../../images/Contact Form.png";
 
 const Contact = () => {
   return (
     <div className="container">
       <hr className="text-white" />
       <div className="row mt-5">
-        <div className="col-md-6">
+        <div className="col-lg-6">
           <div>
             <p className="contact">CONTACT</p>
             <h4 className="header-text">
@@ -38,10 +37,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col-md-6 d-flex justify-content-center align-items-center">
-          {/* <div className="text-center px-5 pt-4">
-            <img className="img-fluid" src={contact} alt="" />
-          </div> */}
+        <div className="col-lg-6 d-flex justify-content-center align-items-center">
           <div className="shadow rounded message-form p-5">
             <form action="">
               <div className="row">

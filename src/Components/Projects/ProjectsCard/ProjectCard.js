@@ -6,7 +6,7 @@ const ProjectCard = ({ details }) => {
   const { projectTitle, projectDescription } = details;
   console.log(details);
   return (
-    <div className="col-md-5 mt-5">
+    <div className="col-lg-5 col-md-6 col-sm-12 mt-5">
       <div className="text-center">
         <img className="img-fluid" src={projectImage} alt="" />
         <div className="card-details">

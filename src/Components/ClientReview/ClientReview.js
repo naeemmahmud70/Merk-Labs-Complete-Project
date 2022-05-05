@@ -50,7 +50,7 @@ const ClientReview = () => {
 
         <div className="row d-flex flex-wrap justify-content-center align-item-center mx-2 mt-5">
           {reviewDetails.map((details) => (
-            <div className="col-md-3 review-card m-5">
+            <div className="col-lg-4 col-md-7 col-sm-12 review-card m-5">
               <p className="text-secondary">
                 {details.date} | {details.Technology}
               </p>

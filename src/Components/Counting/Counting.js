@@ -16,7 +16,7 @@ const Counting = () => {
           <img className="img-fluid" src={dots} alt="" />
         </div>
         <div className="row  header-height p-4">
-          <div className="col-md-8 m-bottom">
+          <div className="col-lg-8 m-bottom">
             <h1 className="top-header-text">
               We provide The Best To Protect Your Users And Their Investments
             </h1>
@@ -29,7 +29,7 @@ const Counting = () => {
             </p>
           </div>
 
-          <div className="col-md-4 glass-bg">
+          <div className="col-lg-4 glass-bg">
             <div className="m-bottom">
               <div className="d-flex count-position">
                 <div>

@@ -33,14 +33,14 @@ const Projects = () => {
   return (
     <div id="Projects" className="container p-5 mt-5">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-lg-6">
           <p className="projects">Projects</p>
           <h3 className="header-text">
             We have completed many amazing projects that you will not believe
           </h3>
         </div>
 
-        <div className="col-md-6 d-flex justify-content-center align-items-center">
+        <div className="col-lg-6 d-flex justify-content-center align-items-center">
           <div>
             <img className="mt-5" src={technology} alt="" />
           </div>
@@ -48,7 +48,7 @@ const Projects = () => {
       </div>
       <hr className="text-white mt-5" />
 
-      <div className="d-flex flex-wrap justify-content-center align-item-center">
+      <div className="row d-flex flex-wrap justify-content-center align-item-center">
         {projectDetails.map((details) => (
           <ProjectCard details={details} key={details.id}></ProjectCard>
         ))}

@@ -11,7 +11,7 @@ const JoinUs = () => {
       </div>
 
       <div className="row joinUs">
-        <div className="col-md-6 p-5 px-5">
+        <div className="col-lg-6 p-5 px-5">
           <div>
             <hr className="text-white top-border" />
             <h5 className="text-white">Join Us</h5>
@@ -27,7 +27,7 @@ const JoinUs = () => {
             <button className="btn-bg text-white fw-bold mt-4">Explore More</button>
           </div>
         </div>
-        <div className="col-md-6 p-4">
+        <div className="col-lg-6 p-4">
           <div className="d-flex justify-content-end MarginTop">
             <a className="tab" href="">
               Node

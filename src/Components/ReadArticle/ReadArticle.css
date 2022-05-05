@@ -40,3 +40,12 @@
 .margin-Left {
 width: 90%;
 }
+
+@media only screen and (max-width: 768px) {
+  #blog{
+    margin-top: 100px;
+  }
+  .neon4{
+    margin-top: -300px;
+  }
+}
