@@ -89,9 +89,7 @@
     margin-top: 200px;
   }
 }
-.transform-effect{
 
-}
 .btn-transform-effect :hover{
   transform: scale(1.1);
   transition-duration: 1s;
@@ -117,5 +115,4 @@
 .top-wave{
   transform: rotate(180deg); 
   height: 50px;
-  /* transform-origin: left top */
 }

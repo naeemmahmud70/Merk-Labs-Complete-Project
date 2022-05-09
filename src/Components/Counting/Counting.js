@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Counting.css";
 import dots from "../../images/dots.png";
 import line from "../../images/Group 66.png";
 import company from "../../images/Company Logo (1).png";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Wave from "react-wavify";
+import CountUp from "react-countup";
+import VisibilitySensor from "react-visibility-sensor";
 
+const Counting = ({ className, ...rest }) => {
+  const [viewPortEntered, setViewPortEntered] = useState(false);
 
-const Counting = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -50,17 +52,90 @@ const Counting = () => {
                 </div>
                 <div className="mx-3">
                   <div className="mt-3">
-                    <p className="count">100+</p>
+                  <CountUp
+                      {...rest}
+                      start={viewPortEntered ? null : 0}
+                      end={100}
+                      duration={1}
+                    >
+                      {({ countUpRef }) => {
+                        return (
+                          <div className="d-flex">
+                            <VisibilitySensor
+                              active={!viewPortEntered}
+                              onChange={(isVisible) => {
+                                if (isVisible) {
+                                  setViewPortEntered(true);
+                                }
+                              }}
+                              delayedCall
+                            >
+                              <h4 className="count" ref={countUpRef}></h4>
+                            </VisibilitySensor>
+                            <span className="count">+</span>
+                          </div>
+                        );
+                      }}
+                    </CountUp>
                     <p className="service">
                       Blockchain companies <br /> protected
                     </p>
                   </div>
                   <div className="countMarginTop">
-                    <p className="count">200+</p>
+                    <CountUp
+                      {...rest}
+                      start={viewPortEntered ? null : 0}
+                      end={200}
+                      duration={1}
+                    >
+                      {({ countUpRef }) => {
+                        return (
+                          <div className="d-flex">
+                            <VisibilitySensor
+                              active={!viewPortEntered}
+                              onChange={(isVisible) => {
+                                if (isVisible) {
+                                  setViewPortEntered(true);
+                                }
+                              }}
+                              delayedCall
+                            >
+                              <h4 className="count" ref={countUpRef}></h4>
+                            </VisibilitySensor>
+                            <span className="count">+</span>
+                          </div>
+                        );
+                      }}
+                    </CountUp>
+
                     <p className="service">Issues discovered</p>
                   </div>
                   <div className="countMarginTop">
-                    <p className="count">10,000+</p>
+                  <CountUp
+                      {...rest}
+                      start={viewPortEntered ? null : 0}
+                      end={10000}
+                      duration={2}
+                    >
+                      {({ countUpRef }) => {
+                        return (
+                          <div className="d-flex">
+                            <VisibilitySensor
+                              active={!viewPortEntered}
+                              onChange={(isVisible) => {
+                                if (isVisible) {
+                                  setViewPortEntered(true);
+                                }
+                              }}
+                              delayedCall
+                            >
+                              <h4 className="count" ref={countUpRef}></h4>
+                            </VisibilitySensor>
+                            <span className="count">+</span>
+                          </div>
+                        );
+                      }}
+                    </CountUp>
                     <p className="service">Analyses available per month</p>
                   </div>
                 </div>
@@ -68,19 +143,7 @@ const Counting = () => {
             </div>
           </div>
         </div>
-        {/* <Wave fill="#24407aa2" mask="url(#mask)" className="bottom-wave">
-        <defs>
-          <linearGradient id="gradient" gradientTransform="rotate(90)">
-            <stop offset="0" stopColor="white" />
-            <stop offset="0.5" stopColor="black" />
-          </linearGradient>
-          <mask id="mask">
-            <rect x="0" y="0" width="2500" height="200" fill="url(#gradient)" />
-          </mask>
-        </defs>
-      </Wave> */}
       </div>
-
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Navbar.css";
-import Wave from "react-wavify";
 
 const Navbar = () => {
   return (

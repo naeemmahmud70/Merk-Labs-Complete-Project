@@ -39,7 +39,7 @@ const MainHeader = () => {
               <rect
                 x="0"
                 y="0"
-                width="2500"
+                width="2560"
                 height="200"
                 fill="url(#gradient)"
               />
@@ -47,7 +47,7 @@ const MainHeader = () => {
           </defs>
         </Wave>
       <div className="row">
-        <div className="col-lg-7 col-12">
+        <div className="col-lg-7 col-sm-12">
           <div className="d-flex justify-content-between">
             <div>
               <div className="icon-transform-effect">
@@ -57,7 +57,7 @@ const MainHeader = () => {
                 <img className="stepper" src={Stepper} alt="" />
               </div>
             </div>
-            <div className="p-5 banner-text">
+            <div className="p-4 banner-text">
               <div data-aos="fade-right">
                 <h1 className="top-header-text">
                   MERKLABS BLOCKCHAIN DEVELOPMENT AND{" "}
@@ -73,14 +73,12 @@ const MainHeader = () => {
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-10 bitcoin-bg p-4">
-          <div>
-            <div>
+        <div className="col-lg-4 col-md-10 bitcoin-bg">
+            <div className="p-4">
               <animated.div style={styles}>
                 <img className="img-fluid bitcoin-Img" src={Bitcoin} alt="" />
               </animated.div>
             </div>
-          </div>
         </div>
 
         <div className="col-lg-1 col-md-1">
@@ -102,6 +100,7 @@ const MainHeader = () => {
       </div>
 
       <div className="row">
+        <div>
         <Wave fill="#03205f" mask="url(#mask)" className="wave-height">
           <defs>
             <linearGradient id="gradient" gradientTransform="rotate(90)">
@@ -112,13 +111,14 @@ const MainHeader = () => {
               <rect
                 x="0"
                 y="0"
-                width="2500"
+                width="2560"
                 height="200"
                 fill="url(#gradient)"
               />
             </mask>
           </defs>
         </Wave>
+        </div>
         <img className="img-fluid" src={HeroWaves} alt="" />
       </div>
     </div>

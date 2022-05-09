@@ -18,8 +18,8 @@ const JoinUs = () => {
       <div className="row joinUs">
         <div className="col-lg-6 p-5 px-5">
           <div>
-            <hr className="text-white top-border" />
-            <h5 className="text-white">Join Us</h5>
+            <span className="animate-border"></span>
+            <h5 className="text-white mt-2">Join Us</h5>
             <p className="header-text py-5">BE A PART OF OUR HAPPY COMMUNITY</p>
             <p className="description justifyText">
               We take immense pride in our achievements and have a happy and

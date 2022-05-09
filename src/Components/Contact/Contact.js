@@ -11,7 +11,7 @@ const Contact = () => {
   }, []);
   return (
     <div className="container">
-      <hr className="text-white" />
+      <span className="animation-border"></span>
       <div className="row mt-5">
         <div className="col-lg-6">
           <div>
