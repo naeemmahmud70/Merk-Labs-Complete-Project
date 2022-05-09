@@ -2,14 +2,13 @@ import React, { useEffect } from "react";
 import "./ClientReview.css";
 import quatation from "../../images/quatation.png";
 import neon7 from "../../images/Neon 7.png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ClientReview = () => {
-
   useEffect(() => {
     AOS.init({ duration: 2000 });
-}, [])
+  }, []);
 
   const reviewDetails = [
     {
@@ -57,8 +56,11 @@ const ClientReview = () => {
 
         <div className="row d-flex flex-wrap justify-content-center align-item-center mx-2 mt-5">
           {reviewDetails.map((details) => (
-            <div data-aos="fade-up" className="col-lg-4 col-md-7 col-sm-12 review-card m-5">
-              <p className="text-secondary">
+            <div
+              data-aos="fade-up"
+              className="col-lg-4 col-md-7 col-sm-12 review-card m-4 p-4"
+            >
+              <p className="text-gray">
                 {details.date} | {details.Technology}
               </p>
               <div className="text-center">
@@ -68,7 +70,9 @@ const ClientReview = () => {
                   </span>
                   <p className="textWhite">{details.review}</p>
                 </div>
-                <img src={details.img} alt="" />
+                <div className="icon-transform-effect">
+                  <img src={details.img} alt="" />
+                </div>
                 <h3 className="text-white">{details.name}</h3>
                 <h6 className="textWhite">{details.occupation}</h6>
               </div>

@@ -49,3 +49,7 @@
 .input-hight{
   height: 40px;
 }
+
+.table-shadow :hover{
+  box-shadow: 5px 5px 5px 5px whitesmoke;
+}

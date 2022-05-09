@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./WhyBest.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const WhyBest = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const details = [
     {
       id: 1,
@@ -36,7 +41,7 @@ const WhyBest = () => {
       </div>
       <div className="row d-flex flex-wrap justify-content-center align-item-center">
         {details.map((details) => (
-          <div className="col-md-5 mt-5 px-4">
+          <div data-aos="fade-up" className="col-md-5 mt-5 px-4">
             <h4 className="text-white">{details.title}</h4>
             <p className="textWhite justifyText">{details.description}</p>
           </div>

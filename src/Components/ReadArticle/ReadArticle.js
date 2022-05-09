@@ -5,6 +5,8 @@ import slideArticle from "../../images/Group 45.png";
 import neon4 from "../../images/Neon 4.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import left from '../../images/leftArrow.png'
+import right from '../../images/rightArrow.png'
 
 const ReadArticle = () => {
   useEffect(() => {
@@ -19,7 +21,7 @@ const ReadArticle = () => {
 
       <div className="d-flex justify-content-end">
         <div className="row article-bg shadow margin-Left">
-          <div data-aos="fade-down-right" className="col-md-6">
+          <div data-aos="fade-down-right" className="col-md-6 img-transform-effect">
             <img className="img-fluid articleImg" src={articleImg} alt="" />
           </div>
 
@@ -30,14 +32,15 @@ const ReadArticle = () => {
                 The Best Way to Avoid Data Leaks and Privacy Scandals: Don't Own
                 Consumer Data
               </h5>
-              <p className="text-white text-secondary">
+              <p className="text-white">
                 “These are companies, like intellicam, that are actually working
                 to get our data onto personal servers so we own it, not the
                 companies”
               </p>
             </div>
-            <div>
-              <img src={slideArticle} alt="" />
+            <div className="btn-transform-effect">
+              <button className="arrow-btn circle-btn "><img src={left} alt="" /></button>
+              <button className="arrow-btn"><img src={right} alt="" /></button>
             </div>
           </div>
         </div>

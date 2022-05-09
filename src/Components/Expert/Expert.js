@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Expert.css";
 import discuss from "../../images/Discuss Illustration.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Expert = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="row p-4 blue-bg-color expert-div">
       <div className="col-md-7">
@@ -16,7 +21,7 @@ const Expert = () => {
         </p>
       </div>
       <div className="col-md-5 p-5">
-        <div className="marginDiscuss">
+        <div data-aos="zoom-in" className="marginDiscuss img-transform-effect">
           <img className="img-fluid" src={discuss} alt="" />
         </div>
       </div>

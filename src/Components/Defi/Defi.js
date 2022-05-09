@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Defi.css";
 import UiIllustration from "../../images/UI Design Illustration.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Defi = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="row p-4 defi-height blue-bg-color">
-      <div className="col-md-5">
+      
+      <div data-aos="zoom-in" className="col-md-5 img-transform-effect">
         <img className="img-fluid" src={UiIllustration} alt="" />
       </div>
       <div className="col-md-7">
@@ -17,6 +24,7 @@ const Defi = () => {
           financial sector and hence taking the grasp of the moment , we have
           developed exceptional projects in the world of DeFi.
         </p>
+ 
       </div>
     </div>
   );

@@ -3,19 +3,25 @@ import "./Counting.css";
 import dots from "../../images/dots.png";
 import line from "../../images/Group 66.png";
 import company from "../../images/Company Logo (1).png";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Wave from "react-wavify";
+
 
 const Counting = () => {
-
   useEffect(() => {
     AOS.init({ duration: 2000 });
-}, [])
+  }, []);
 
   return (
     <div className="blue-bg-color row">
-      <div data-aos="fade-up" className="company-bg text-center p-5 Zindex">
-        <p className="fw-bold text-white">Trusted by Leading Dapp Teams and Enterprises</p>
+      <div
+        data-aos="fade-up"
+        className="company-bg text-center p-5 Zindex btn-transform-effect"
+      >
+        <p className="fw-bold text-white">
+          Trusted by Leading Dapp Teams and Enterprises
+        </p>
         <img className="img-fluid" src={company} alt="" />
       </div>
       <div className="counting-header-bg">
@@ -23,7 +29,7 @@ const Counting = () => {
           <img className="img-fluid" src={dots} alt="" />
         </div>
         <div className="row  header-height p-4">
-          <div className="col-lg-8 m-bottom">
+          <div data-aos="fade-right" className="col-lg-8 m-bottom">
             <h1 className="top-header-text">
               We provide The Best To Protect Your Users And Their Investments
             </h1>
@@ -62,7 +68,19 @@ const Counting = () => {
             </div>
           </div>
         </div>
+        {/* <Wave fill="#24407aa2" mask="url(#mask)" className="bottom-wave">
+        <defs>
+          <linearGradient id="gradient" gradientTransform="rotate(90)">
+            <stop offset="0" stopColor="white" />
+            <stop offset="0.5" stopColor="black" />
+          </linearGradient>
+          <mask id="mask">
+            <rect x="0" y="0" width="2500" height="200" fill="url(#gradient)" />
+          </mask>
+        </defs>
+      </Wave> */}
       </div>
+
     </div>
   );
 };

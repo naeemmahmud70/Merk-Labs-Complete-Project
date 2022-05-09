@@ -1,6 +1,5 @@
 import React from "react";
 import "./Projects.css";
-import technology from "../../images/Field.png";
 import ProjectCard from "./ProjectsCard/ProjectCard";
 
 const Projects = () => {
@@ -41,8 +40,33 @@ const Projects = () => {
         </div>
 
         <div className="col-lg-6 d-flex justify-content-center align-items-center">
-          <div>
-            <img className="mt-5" src={technology} alt="" />
+          <div class="dropdown btn-transform-effect">
+            <button
+              className="dropdown-toggle tech-drop "
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Technology
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li>
+                <a class="dropdown-item" href="#">
+                  Action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Another action
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Something else here
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

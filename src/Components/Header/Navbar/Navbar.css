@@ -18,3 +18,7 @@
 .tabStyle {
   margin-right: 25px;
 }
+.tabStyle :hover{
+  transform: scale(1.1);
+  transition-duration: 2s;
+}

@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./JoinUs.css";
 import code from "../../images/codee.png";
 import neon6 from "../../images/Neon 6.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const JoinUs = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="row">
       <div className="d-flex justify-content-end">
@@ -23,8 +28,10 @@ const JoinUs = () => {
               because we are here always for you.
             </p>
           </div>
-          <div>
-            <button className="btn-bg text-white fw-bold mt-4">Explore More</button>
+          <div className="btn-transform-effect">
+            <button className="btn-bg text-white fw-bold mt-4">
+              Explore More
+            </button>
           </div>
         </div>
         <div className="col-lg-6 p-4">
@@ -39,7 +46,7 @@ const JoinUs = () => {
               Curl
             </a>
           </div>
-          <div className="code-bg">
+          <div data-aos="zoom-out-up" className="code-bg img-transform-effect">
             <img className="img-fluid p-4" src={code} alt="" />
           </div>
         </div>

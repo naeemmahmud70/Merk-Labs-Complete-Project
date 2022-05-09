@@ -107,6 +107,10 @@
   left: 20px;
 }
 
+.text-gray{
+  color: rgba(255, 255, 255, 0.692);
+}
+
 @media only screen and (max-width: 320px) {
   .lineHeight{
     height: 150px;
@@ -215,4 +219,8 @@
     color: #f3f3f3;
 
   }
+}
+.bottom-wave{
+  transform: rotate(180deg); 
+  height: 150px;
 }

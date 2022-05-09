@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Dapps.css";
 import Maintenance from "../../images/Maintenance Illustration.png";
 import neon from "../../images/Neon.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Dapps = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="row p-4 blue-bg-color">
       <div className="col-md-7 mb-5">
@@ -20,7 +25,7 @@ const Dapps = () => {
           </p>
         </div>
       </div>
-      <div className="col-md-5 mb-5">
+      <div data-aos="zoom-in" className="col-md-5 mb-5 img-transform-effect">
         <img className="img-fluid" src={Maintenance} alt="" />
       </div>
     </div>

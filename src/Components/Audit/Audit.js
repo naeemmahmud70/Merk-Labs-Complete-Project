@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Audit.css";
 import development from "../../images/Development Illustration.png";
 import neon2 from "../../images/Neon 2.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Audit = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="row p-4 blue-bg-color">
-      <div className="col-md-5 mt-5">
+      <div data-aos="zoom-in" className="col-md-5 mt-5 img-transform-effect">
         <img className="img-fluid" src={development} alt="" />
       </div>
       <div className="col-md-7 mt-5">

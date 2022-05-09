@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./OurTeam.css";
 import team from "../../images/Team Illustration.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const OurTeam = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   return (
     <div className="container team MarginTop">
       <div className="row p-4">
@@ -15,11 +20,11 @@ const OurTeam = () => {
             hands. We understand your needs and give out a performance that
             matches your expectations.
           </p>
-          <div className="my-5">
+          <div className="my-5 btn-transform-effect">
             <button className="btn-bg text-white fw-bold">Explore More</button>
           </div>
         </div>
-        <div className="col-md-6">
+        <div data-aos="zoom-in-up" className="col-md-6 img-transform-effect">
           <img className="img-fluid" src={team} alt="" />
         </div>
       </div>

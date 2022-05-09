@@ -5,3 +5,13 @@
   letter-spacing: 0.1em;
   color: #16fcd2;
 }
+.tech-drop{
+  padding: 16px 35px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  background: #0b2d7594;
+  border: 0;
+  border-radius: 15px;
+}

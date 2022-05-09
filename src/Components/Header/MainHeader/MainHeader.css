@@ -89,3 +89,33 @@
     margin-top: 200px;
   }
 }
+.transform-effect{
+
+}
+.btn-transform-effect :hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.icon-transform-effect :hover{
+  transform: scale(1.5);
+  transition-duration: 1s;
+}
+
+.img-transform-effect :hover{
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+.wave-bg{
+  background-image: url("../../../images/Hero\ Waves.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+}
+.wave-height{
+  height: 100px;
+}
+.top-wave{
+  transform: rotate(180deg); 
+  height: 50px;
+  /* transform-origin: left top */
+}
