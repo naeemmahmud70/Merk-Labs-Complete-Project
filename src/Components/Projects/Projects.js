@@ -30,7 +30,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="Projects" className="container p-5 mt-5">
+    <div id="Projects" className="container p-4 mt-5">
       <div className="row">
         <div className="col-lg-6">
           <p className="projects">Projects</p>
@@ -40,7 +40,7 @@ const Projects = () => {
         </div>
 
         <div className="col-lg-6 d-flex justify-content-center align-items-center">
-          <div class="dropdown btn-transform-effect">
+          <div class="dropdown btn-transform-effect mt-5">
             <button
               className="dropdown-toggle tech-drop "
               type="button"

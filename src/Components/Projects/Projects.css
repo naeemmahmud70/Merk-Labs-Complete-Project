@@ -91,31 +91,6 @@
   }
 }
 
-@media only screen and (max-width: 1440px) {
-  @-webkit-keyframes animationborder {
-    0% {
-      -webkit-transform: translateX(0px);
-      transform: translateX(0px);
-    }
-
-    100% {
-      -webkit-transform: translateX(881px);
-      transform: translateX(881px);
-    }
-  }
-
-  @keyframes animationborder {
-    0% {
-      -webkit-transform: translateX(0px);
-      transform: translateX(0px);
-    }
-
-    100% {
-      -webkit-transform: translateX(881px);
-      transform: translateX(881px);
-    }
-  }
-}
 
 @media only screen and (min-width: 1441px) {
   @-webkit-keyframes animationborder {

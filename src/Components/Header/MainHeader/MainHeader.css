@@ -16,7 +16,11 @@
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 15%;
+    padding-left: 15%;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    z-index: 4;
   }
   .social-icon {
     padding-right: 45px;
@@ -39,9 +43,9 @@
   }
 
   .social-icons {
-    position: relative;
+    position: fixed;
     top: 200px;
-    padding: 10px;
+    z-index: 3;
   }
 
   .social-icon {

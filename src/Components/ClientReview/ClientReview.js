@@ -58,9 +58,9 @@ const ClientReview = () => {
           {reviewDetails.map((details) => (
             <div
               data-aos="fade-up"
-              className="col-lg-4 col-md-7 col-sm-12 review-card m-4 p-4"
+              className="col-lg-4 col-xl-4 col-md-7 col-sm-12 review-card p-4"
             >
-              <p className="text-gray">
+              <p className="text-secondary">
                 {details.date} | {details.Technology}
               </p>
               <div className="text-center">

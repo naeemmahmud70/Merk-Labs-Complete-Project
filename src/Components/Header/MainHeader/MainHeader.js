@@ -73,7 +73,7 @@ const MainHeader = () => {
           </div>
         </div>
 
-        <div className="col-lg-4 col-md-10 bitcoin-bg">
+        <div className="col-lg-4 col-md-10 col-sm-10 bitcoin-bg">
             <div className="p-4">
               <animated.div style={styles}>
                 <img className="img-fluid bitcoin-Img" src={Bitcoin} alt="" />
