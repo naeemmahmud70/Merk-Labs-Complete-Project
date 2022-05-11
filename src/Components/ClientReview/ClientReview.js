@@ -4,6 +4,14 @@ import quatation from "../../images/quatation.png";
 import neon7 from "../../images/Neon 7.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+// import "swiper/css";
+import { Navigation, Pagination, A11y, Autoplay, Grid} from "swiper";
+
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+import "swiper/scss/scrollbar";
 
 const ClientReview = () => {
   useEffect(() => {
@@ -41,6 +49,16 @@ const ClientReview = () => {
       name: "JOHN SMITH",
       occupation: "Founder of Awesomeux Technology",
     },
+    {
+      id: 4,
+      date: "01 FEB, 2019",
+      Technology: "TECHNOLOGY",
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      img: "https://i.postimg.cc/VvRmscyR/Group-5.png",
+      name: "JOHN SMITH",
+      occupation: "Founder of Awesomeux Technology",
+    },
   ];
   return (
     <div>
@@ -51,33 +69,64 @@ const ClientReview = () => {
             Subscribe to our newsletter for daily/weekly <br /> update of our
             products and services.
           </p>
-          <p></p>
         </div>
 
-        <div className="row d-flex flex-wrap justify-content-center align-item-center mx-2 mt-5">
-          {reviewDetails.map((details) => (
-            <div
-              data-aos="fade-up"
-              className="col-lg-4 col-xl-4 col-md-7 col-sm-12 review-card p-4"
-            >
-              <p className="text-secondary">
-                {details.date} | {details.Technology}
-              </p>
-              <div className="text-center">
-                <div className="d-flex">
-                  <span>
-                    <img className="" src={quatation} alt="" />
-                  </span>
-                  <p className="textWhite">{details.review}</p>
+        <div className="row d-flex justify-content-center mt-5">
+          <Swiper
+            modules={[Navigation, Pagination, A11y, Autoplay, Grid]}
+            autoplay={{ delay: 2000 }}
+            spaceBetween={1}
+            navigation
+            pagination={{ clickable: true }}
+            onSlideChange={() => console.log("slide change")}
+            onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              480: {
+                slidesPerView: 1,
+              },
+              768: {
+             
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+              1440: {
+              
+                slidesPerView: 3,
+              },
+              2560: {
+              
+                slidesPerView: 4,
+              },
+            }}
+          >
+            {reviewDetails.map((details) => (
+              <SwiperSlide>
+                <div
+                  data-aos="fade-up"
+                  className="col-md-12 col-sm-12 review-card p-4"
+                >
+                  <p className="text-secondary">
+                    {details.date} | {details.Technology}
+                  </p>
+                  <div className="text-center">
+                    <div className="d-flex">
+                      <span>
+                        <img className="" src={quatation} alt="" />
+                      </span>
+                      <p className="textWhite">{details.review}</p>
+                    </div>
+                    <div className="icon-transform-effect">
+                      <img src={details.img} alt="" />
+                    </div>
+                    <h3 className="text-white">{details.name}</h3>
+                    <h6 className="textWhite">{details.occupation}</h6>
+                  </div>
                 </div>
-                <div className="icon-transform-effect">
-                  <img src={details.img} alt="" />
-                </div>
-                <h3 className="text-white">{details.name}</h3>
-                <h6 className="textWhite">{details.occupation}</h6>
-              </div>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
       <div>
