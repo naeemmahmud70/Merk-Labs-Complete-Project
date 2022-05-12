@@ -57,3 +57,9 @@ width: 90%;
     margin-top: -300px;
   }
 }
+
+@media only screen and (min-width: 1440px) {
+  .article-text{
+    width: 50%;
+  }
+}

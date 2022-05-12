@@ -52,3 +52,45 @@
     z-index: 3;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .second-review {
+    height: 450px;
+    position: relative;
+    bottom: 33px;
+  }
+
+  .first-review {
+    position: relative;
+    left: 50px;
+  }
+
+  .third-review {
+    position: relative;
+    right: 50px;
+  }
+
+  .second {
+    z-index: 3;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .second-review {
+    height: 490px;
+    position: relative;
+    bottom: 33px;
+  }
+
+  .first-review {
+    position: relative;
+    left: 50px;
+  }
+
+  .third-review {
+    position: relative;
+    right: 50px;
+  }
+
+  .second {
+    z-index: 3;
+  }
+}

@@ -5,7 +5,7 @@ import neon7 from "../../images/Neon 7.png";
 import John from "../../images/John.png";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay, Grid } from "swiper";
+import { Navigation, Pagination, A11y, Autoplay} from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
@@ -25,7 +25,7 @@ const ClientReview = () => {
 
         <div className="row d-flex align-items-center  mt-5">
           <Swiper
-            modules={[Navigation, Pagination, A11y, Autoplay, Grid]}
+            modules={[Navigation, Pagination, A11y, Autoplay]}
             autoplay={{ delay: 2000 }}
             spaceBetween={1}
             navigation
@@ -40,7 +40,7 @@ const ClientReview = () => {
                 slidesPerView: 2,
               },
               1024: {
-                slidesPerView: 2,
+                slidesPerView: 3,
               },
               1440: {
                 slidesPerView: 3,
