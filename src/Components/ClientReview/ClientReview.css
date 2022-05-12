@@ -6,8 +6,15 @@
 }
 
 .review-card {
-  border: 2px solid rgba(245, 245, 245, 0.734);
+  background: linear-gradient(123.64deg, rgba(255, 255, 255, 0) -22.38%, rgba(255, 255, 255, 0.0312) 70.38%);
+  backdrop-filter: blur(18px);
   border-radius: 15px;
+  border-bottom: 3px solid rgba(245, 245, 245, 0.431);
+  border-left: 2px solid rgba(245, 245, 245, 0.431);
+  border-right: 2px solid rgba(245, 245, 245, 0.431);
+  border-top: 1px solid rgba(245, 245, 245, 0.082);
+  border-radius: 15px;
+  margin-top: 50px;
 }
 
 .textWhite {
@@ -19,7 +26,29 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .review-card{
+  .review-card {
     margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .second-review {
+    height: 410px;
+    position: relative;
+    bottom: 33px;
+  }
+
+  .first-review {
+    position: relative;
+    left: 50px;
+  }
+
+  .third-review {
+    position: relative;
+    right: 50px;
+  }
+
+  .second {
+    z-index: 3;
   }
 }

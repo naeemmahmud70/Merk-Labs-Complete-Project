@@ -1,65 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./ClientReview.css";
 import quatation from "../../images/quatation.png";
 import neon7 from "../../images/Neon 7.png";
-import AOS from "aos";
+import John from "../../images/John.png";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import "swiper/css";
-import { Navigation, Pagination, A11y, Autoplay, Grid} from "swiper";
-
+import { Navigation, Pagination, A11y, Autoplay, Grid } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
 
 const ClientReview = () => {
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
-  const reviewDetails = [
-    {
-      id: 1,
-      date: "01 FEB, 2019",
-      Technology: "TECHNOLOGY",
-      review:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      img: "https://i.postimg.cc/VvRmscyR/Group-5.png",
-      name: "JOHN SMITH",
-      occupation: "Founder of Awesomeux Technology",
-    },
-    {
-      id: 2,
-      date: "01 FEB, 2019",
-      Technology: "TECHNOLOGY",
-      review:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      img: "https://i.postimg.cc/VvRmscyR/Group-5.png",
-      name: "JOHN SMITH",
-      occupation: "Founder of Awesomeux Technology",
-    },
-    {
-      id: 3,
-      date: "01 FEB, 2019",
-      Technology: "TECHNOLOGY",
-      review:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      img: "https://i.postimg.cc/VvRmscyR/Group-5.png",
-      name: "JOHN SMITH",
-      occupation: "Founder of Awesomeux Technology",
-    },
-    {
-      id: 4,
-      date: "01 FEB, 2019",
-      Technology: "TECHNOLOGY",
-      review:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      img: "https://i.postimg.cc/VvRmscyR/Group-5.png",
-      name: "JOHN SMITH",
-      occupation: "Founder of Awesomeux Technology",
-    },
-  ];
   return (
     <div>
       <div className="container MarginTop">
@@ -71,7 +23,7 @@ const ClientReview = () => {
           </p>
         </div>
 
-        <div className="row d-flex justify-content-center mt-5">
+        <div className="row d-flex align-items-center  mt-5">
           <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay, Grid]}
             autoplay={{ delay: 2000 }}
@@ -85,47 +37,88 @@ const ClientReview = () => {
                 slidesPerView: 1,
               },
               768: {
-             
                 slidesPerView: 2,
               },
               1024: {
                 slidesPerView: 2,
               },
               1440: {
-              
                 slidesPerView: 3,
               },
               2560: {
-              
                 slidesPerView: 4,
               },
             }}
           >
-            {reviewDetails.map((details) => (
-              <SwiperSlide>
-                <div
-                  data-aos="fade-up"
-                  className="col-md-12 col-sm-12 review-card p-4"
-                >
-                  <p className="text-secondary">
-                    {details.date} | {details.Technology}
-                  </p>
-                  <div className="text-center">
-                    <div className="d-flex">
-                      <span>
-                        <img className="" src={quatation} alt="" />
-                      </span>
-                      <p className="textWhite">{details.review}</p>
-                    </div>
-                    <div className="icon-transform-effect">
-                      <img src={details.img} alt="" />
-                    </div>
-                    <h3 className="text-white">{details.name}</h3>
-                    <h6 className="textWhite">{details.occupation}</h6>
+            <SwiperSlide>
+              <div className="col-md-12 col-sm-12 review-card first-review p-4">
+                <p className="text-secondary">01 FEB, 2019 | TECHNOLOGY</p>
+                <div className="text-center">
+                  <div className="d-flex">
+                    <span>
+                      <img className="" src={quatation} alt="" />
+                    </span>
+                    <p className="textWhite">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
+                  <div className="icon-transform-effect">
+                    <img src={John} alt="" />
+                  </div>
+                  <h3 className="text-white">JOHN SMITH</h3>
+                  <h6 className="textWhite">Founder of Awesomeux Technology</h6>
                 </div>
-              </SwiperSlide>
-            ))}
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="second">
+              <div className="col-md-12 col-sm-12 review-card second-review p-4">
+                <p className="text-secondary">01 FEB, 2019 | TECHNOLOGY</p>
+                <div className="text-center">
+                  <div className="d-flex">
+                    <span>
+                      <img className="" src={quatation} alt="" />
+                    </span>
+                    <p className="textWhite">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div className="icon-transform-effect">
+                    <img src={John} alt="" />
+                  </div>
+                  <h3 className="text-white">JOHN SMITH</h3>
+                  <h6 className="textWhite">Founder of Awesomeux Technology</h6>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="col-md-12 col-sm-12 review-card third-review p-4">
+                <p className="text-secondary">01 FEB, 2019 | TECHNOLOGY</p>
+                <div className="text-center">
+                  <div className="d-flex">
+                    <span>
+                      <img className="" src={quatation} alt="" />
+                    </span>
+                    <p className="textWhite">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div className="icon-transform-effect">
+                    <img src={John} alt="" />
+                  </div>
+                  <h3 className="text-white">JOHN SMITH</h3>
+                  <h6 className="textWhite">Founder of Awesomeux Technology</h6>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
