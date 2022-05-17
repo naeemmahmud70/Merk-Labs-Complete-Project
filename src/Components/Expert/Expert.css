@@ -11,3 +11,9 @@
     bottom: 378px;
   }
 }
+@media only screen and (max-width: 425px) {
+  .expert-div {
+    position: relative;
+    bottom: 80px;
+  }
+}

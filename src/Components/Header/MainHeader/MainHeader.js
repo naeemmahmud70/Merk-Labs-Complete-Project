@@ -47,7 +47,7 @@ const MainHeader = () => {
           </defs>
         </Wave>
       <div className="row">
-        <div className="col-lg-7 col-sm-12">
+        <div className="col-lg-7">
           <div className="d-flex justify-content-between">
             <div>
               <div className="icon-transform-effect">

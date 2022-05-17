@@ -85,7 +85,7 @@ const Contact = () => {
       <div data-aos="fade-up" className="MarginTop">
         <div className="row join-Us joinUs my-5 m-1 rounded shadow ">
           <div className="col-md-8">
-            <h3 className="header-text">
+            <h3 id="contact-banner-text" className="header-text">
               We've prepared everything, it's time for you to tell the problem
             </h3>
           </div>

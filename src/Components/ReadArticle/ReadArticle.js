@@ -14,7 +14,7 @@ const ReadArticle = () => {
   }, []);
 
   return (
-    <div id="blog" className="row p-4">
+    <div id="blog" className="row">
       <div className="d-flex justify-content-end">
         <img className="img-fluid neon4" src={neon4} alt="" />
       </div>

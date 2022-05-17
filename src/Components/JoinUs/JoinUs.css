@@ -1,6 +1,7 @@
 .code-bg {
   background: url("../../images//code.png");
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: cover;
 }
 
@@ -27,6 +28,11 @@
     color: white;
     padding: 10px;
 
+  }
+}
+@media only screen and (min-width: 992px) {
+  .code-bg{
+    margin-right: 8%;
   }
 }
 

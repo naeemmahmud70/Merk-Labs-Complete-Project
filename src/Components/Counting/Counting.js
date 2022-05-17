@@ -24,7 +24,7 @@ const Counting = ({ className, ...rest }) => {
         <p className="fw-bold text-white">
           Trusted by Leading Dapp Teams and Enterprises
         </p>
-        <img className="img-fluid" src={company} alt="" />
+        <img className="img-fluid px-5" src={company} alt="" />
       </div>
       <div className="counting-header-bg">
         <div className="d-flex justify-content-end dots">

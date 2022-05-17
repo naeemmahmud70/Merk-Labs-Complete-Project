@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: cover;
+
 }
 @media only screen and (max-width: 520px) {
   .top-header-text {

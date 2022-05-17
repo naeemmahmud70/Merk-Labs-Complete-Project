@@ -10,7 +10,7 @@ const JoinUs = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="row">
+    <div>
       <div className="d-flex justify-content-end">
         <img className="img-fluid neon6" src={neon6} alt="" />
       </div>
