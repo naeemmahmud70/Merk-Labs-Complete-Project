@@ -6,31 +6,25 @@
   background-position: cover;
 
 }
+
 @media only screen and (max-width: 520px) {
   .top-header-text {
     color: #ffffff;
     text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
   }
-  .social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-left: 15%;
-    position: fixed;
-    top: 50px;
-    right: 10px;
-    z-index: 4;
-  }
-  .social-icon {
-    padding-right: 45px;
-  }
-  .line-div{
+
+  .line-div {
     display: none;
   }
-  .banner-text{
+
+  .banner-text {
     margin-left: -20px;
+  }
+
+  .social-icons {
+    position: fixed;
+    z-index: 3;
+    left: 80%;
   }
 }
 
@@ -43,20 +37,26 @@
     text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
   }
 
-  .social-icons {
-    position: fixed;
-    top: 200px;
-    z-index: 3;
+  .bitcoin-Img {
+    padding-left: 100px;
   }
-
-  .social-icon {
-    padding-bottom: 45px;
+  .explore-btn {
+    margin-top: 100px;
   }
 }
 
-.explore-btn {
-  margin-top: 100px;
+.social-icons {
+  position: fixed;
+  top: 35%;
+  z-index: 3;
+
 }
+
+.social-icon {
+  padding-bottom: 45px;
+}
+
+
 
 .bitcoin-bg {
   background-image: url("../../../images/Frame.png");
@@ -67,11 +67,10 @@
 
 .bitcoin-Img {
   padding-top: 100px;
-  padding-left: 100px;
 }
 
 
-@media only screen and (min-width: 370px) {
+@media only screen and (min-width: 520px) {
   .box {
     padding-left: 20px;
     padding-top: 10px;
@@ -83,7 +82,7 @@
   }
 }
 
-@media only screen and (max-width: 369px) {
+@media only screen and (max-width: 425px) {
   .box {
     padding-left: 10px;
     padding-top: 10px;
@@ -91,33 +90,64 @@
 
   .stepper {
     padding-left: 35px;
-    margin-top: 200px;
+    margin-top: 100px;
+  }
+  .explore-btn {
+    margin-top: 100px;
   }
 }
 
-.btn-transform-effect :hover{
+@media only screen and (max-width: 520px) {
+  .bitcoin-Img {
+    padding: 40px;
+  }
+  
+}
+
+@media only screen and (max-width: 375px) {
+  .top-header-text{
+    font-size: 30px;
+    padding-left: 10px;
+    margin-top: -20px;
+  }
+  .stepper {
+    display: none;
+  }
+  .box{
+    display: none;
+  }
+  .explore-btn {
+    margin-top: 50px;
+  }
+}
+
+.btn-transform-effect :hover {
   transform: scale(1.1);
   transition-duration: 1s;
 }
-.icon-transform-effect :hover{
+
+.icon-transform-effect :hover {
   transform: scale(1.5);
   transition-duration: 1s;
 }
 
-.img-transform-effect :hover{
+.img-transform-effect :hover {
   transform: scale(1.1);
   transition-duration: 1s;
 }
-.wave-bg{
+
+.wave-bg {
   background-image: url("../../../images/Hero\ Waves.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: cover;
 }
-.wave-height{
+
+.wave-height {
   height: 100px;
 }
-.top-wave{
-  transform: rotate(180deg); 
+
+.top-wave {
+  transform: rotate(180deg);
   height: 50px;
 }

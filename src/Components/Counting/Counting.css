@@ -8,14 +8,15 @@
     bottom: 80px;
   }
 }
-@media only screen and (max-width: 520px) {
+
+@media only screen and (max-width: 519px) {
   .company-bg {
     background-image: url("../../images/Rectangle\ 1.png");
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: cover;
+    background-position-x: 90%;
   }
 }
+
 .blue-bg-color {
   background-color: #03205f;
 }
@@ -30,6 +31,7 @@
   position: relative;
   bottom: 150px;
 }
+
 .header-height {
   height: auto;
 }
@@ -47,6 +49,7 @@
     color: rgba(255, 255, 255, 0.747);
   }
 }
+
 @media only screen and (min-width: 520px) {
   .header-text-style {
     font-size: 31px;
@@ -54,6 +57,7 @@
     margin-top: 25px;
     color: rgba(255, 255, 255, 0.747);
   }
+
   .header-text {
     font-weight: 700;
     font-size: 47px;
@@ -74,6 +78,7 @@
 .justifyText {
   text-align: justify;
 }
+
 .glass-bg {
   height: auto;
   color: white;
@@ -82,9 +87,11 @@
   background-position: cover;
   background-size: contain;
 }
+
 .m-bottom {
   margin-bottom: 70px;
 }
+
 .count {
   font-weight: 700;
   font-size: 41px;
@@ -92,29 +99,33 @@
   color: #ffffff;
   text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
 }
+
 .service {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   color: #f3f3f3;
 }
+
 .countMarginTop {
   margin-top: 35px;
 }
+
 .count-position {
   position: relative;
   top: 30px;
   left: 20px;
 }
 
-.text-gray{
+.text-gray {
   color: rgba(255, 255, 255, 0.692);
 }
 
 @media only screen and (max-width: 320px) {
-  .lineHeight{
+  .lineHeight {
     height: 150px;
   }
+
   .count {
     margin-top: -10px;
     font-weight: 700;
@@ -123,12 +134,14 @@
     color: #ffffff;
     text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
   }
+
   .service {
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     color: #f3f3f3;
   }
+
   .glass-bg {
     height: 500px;
     color: white;
@@ -148,15 +161,18 @@
     color: #ffffff;
     text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
   }
+
   .service {
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     color: #f3f3f3;
   }
+
   .lineHeight {
     height: 300px;
   }
+
   .glass-bg {
     height: 380px;
     color: white;
@@ -173,6 +189,7 @@
   .lineHeight {
     height: 280px;
   }
+
   .count {
     margin-top: -25px;
     font-weight: 700;
@@ -181,6 +198,7 @@
     color: #ffffff;
     text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
   }
+
   .service {
     font-weight: 700;
     font-size: 15px;
@@ -188,6 +206,7 @@
     color: #f3f3f3;
 
   }
+
   .glass-bg {
     height: 380px;
     color: white;
@@ -204,6 +223,7 @@
   .lineHeight {
     height: 390px;
   }
+
   .count {
     margin-top: 5px;
     font-weight: 700;
@@ -212,6 +232,7 @@
     color: #ffffff;
     text-shadow: 0px 4px 37px rgba(255, 255, 255, 0.25);
   }
+
   .service {
     font-weight: 700;
     font-size: 15px;
@@ -220,7 +241,8 @@
 
   }
 }
-.bottom-wave{
-  transform: rotate(180deg); 
+
+.bottom-wave {
+  transform: rotate(180deg);
   height: 150px;
 }

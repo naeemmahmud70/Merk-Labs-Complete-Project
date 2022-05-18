@@ -5,11 +5,18 @@ import neon7 from "../../images/Neon 7.png";
 import John from "../../images/John.png";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y, Autoplay} from "swiper";
+import {
+  Navigation,
+  Pagination,
+  A11y,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
 import "swiper/scss/scrollbar";
+import "swiper/scss/effect-creative";
 
 const ClientReview = () => {
   return (
@@ -25,9 +32,19 @@ const ClientReview = () => {
 
         <div className="row d-flex align-items-center  mt-5">
           <Swiper
-            modules={[Navigation, Pagination, A11y, Autoplay]}
+            modules={[Navigation, Pagination, A11y, Autoplay, EffectCoverflow]}
             autoplay={{ delay: 2000 }}
             spaceBetween={1}
+            effect="coverflow"
+            centeredSlides="true"
+            grabCursor="true"
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
             navigation
             pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}

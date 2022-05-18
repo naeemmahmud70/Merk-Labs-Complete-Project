@@ -81,7 +81,7 @@ const MainHeader = () => {
             </div>
         </div>
 
-        <div className="col-lg-1 col-md-1">
+        <div className="col-lg-1 col-md-1 col-sm-1">
           <div className="social-icons text-center">
             <div className="icon-transform-effect">
               <img className="img-fluid social-icon" src={twitter} alt="" />
