@@ -30,7 +30,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div id="Projects" className="container p-4 mt-5">
+    <div id="Projects" className="p-4 mt-5">
       <div className="row">
         <div className="col-lg-6">
           <p className="projects">Projects</p>

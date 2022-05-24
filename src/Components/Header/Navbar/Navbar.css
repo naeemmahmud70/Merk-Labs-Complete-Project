@@ -8,6 +8,16 @@
   z-index: 3;
   background-color: #03205f;
 }
+@media only screen and (max-width: 1441px) {
+  #nav-padding{
+    padding: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1441px) {
+  #nav-padding{
+    padding: 2.3rem;
+  }
+}
 .brand-name {
   font-weight: 600;
   font-size: 37px;

@@ -21,15 +21,24 @@
   background-color: #03205f;
 }
 
+@media only screen and (min-width: 1441px) {
+  #counting-width {
+    max-width: 90%;
+  }
+}
+
 .counting-header-bg {
   height: auto;
+  position: relative;
+  bottom: 150px;
+}
+
+.blur-bg {
   background-image: url("../../images//Blur.png");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: auto;
+  background-size: left;
   background-color: #03205f;
-  position: relative;
-  bottom: 150px;
 }
 
 .header-height {
@@ -66,6 +75,12 @@
   }
 }
 
+.header-text-style {
+  background: -webkit-linear-gradient(180deg, #2F7FEB, #eee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media only screen and (max-width: 520px) {
   .header-text {
     font-weight: 550;
@@ -87,6 +102,8 @@
   background-position: cover;
   background-size: contain;
 }
+
+
 
 .m-bottom {
   margin-bottom: 70px;

@@ -2,7 +2,6 @@ import React from "react";
 import "./ClientReview.css";
 import quatation from "../../images/quatation.png";
 import neon7 from "../../images/Neon 7.png";
-import John from "../../images/John.png";
 import "aos/dist/aos.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
@@ -19,9 +18,41 @@ import "swiper/scss/scrollbar";
 import "swiper/scss/effect-creative";
 
 const ClientReview = () => {
+  const reviewDetails = [
+    {
+      id: 1,
+      date: " 1st February, 2019",
+      sector: "Technology",
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "https://i.postimg.cc/SQ2Znff0/John.png",
+      name: "JOHN SMITH",
+      occupation: "Founder of Awesomeux Technology",
+    },
+    {
+      id: 2,
+      date: " 1st February, 2019",
+      sector: "Technology",
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "https://i.postimg.cc/SQ2Znff0/John.png",
+      name: "JOHN SMITH",
+      occupation: "Founder of Awesomeux Technology",
+    },
+    {
+      id: 3,
+      date: " 1st February, 2019",
+      sector: "Technology",
+      review:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting  text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      image: "https://i.postimg.cc/SQ2Znff0/John.png",
+      name: "JOHN SMITH",
+      occupation: "Founder of Awesomeux Technology",
+    },
+  ];
   return (
     <div>
-      <div className="container MarginTop">
+      <div className="MarginTop">
         <div className="text-center mt-5">
           <p className="client-review">Our Client Review</p>
           <p className="text-white">
@@ -67,75 +98,28 @@ const ClientReview = () => {
               },
             }}
           >
-            <SwiperSlide>
-              <div className="col-md-12 col-sm-12 review-card first-review p-4">
-                <p className="text-secondary">01 FEB, 2019 | TECHNOLOGY</p>
-                <div className="text-center">
-                  <div className="d-flex">
-                    <span>
-                      <img className="" src={quatation} alt="" />
-                    </span>
-                    <p className="textWhite">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
-                    </p>
+            {reviewDetails.map((details) => (
+              <SwiperSlide>
+                <div className="col-md-12 col-sm-12 review-card first-review p-4">
+                  <p className="text-secondary">
+                    {details.date} | {details.sector}
+                  </p>
+                  <div className="text-center">
+                    <div className="d-flex">
+                      <span>
+                        <img className="" src={quatation} alt="" />
+                      </span>
+                      <p className="textWhite">{details.review}</p>
+                    </div>
+                    <div className="icon-transform-effect">
+                      <img src={details.image} alt="" />
+                    </div>
+                    <h3 className="text-white">{details.name}</h3>
+                    <h6 className="textWhite">{details.occupation}</h6>
                   </div>
-                  <div className="icon-transform-effect">
-                    <img src={John} alt="" />
-                  </div>
-                  <h3 className="text-white">JOHN SMITH</h3>
-                  <h6 className="textWhite">Founder of Awesomeux Technology</h6>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="second">
-              <div className="col-md-12 col-sm-12 review-card second-review p-4">
-                <p className="text-secondary">01 FEB, 2019 | TECHNOLOGY</p>
-                <div className="text-center">
-                  <div className="d-flex">
-                    <span>
-                      <img className="" src={quatation} alt="" />
-                    </span>
-                    <p className="textWhite">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
-                    </p>
-                  </div>
-                  <div className="icon-transform-effect">
-                    <img src={John} alt="" />
-                  </div>
-                  <h3 className="text-white">JOHN SMITH</h3>
-                  <h6 className="textWhite">Founder of Awesomeux Technology</h6>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="col-md-12 col-sm-12 review-card third-review p-4">
-                <p className="text-secondary">01 FEB, 2019 | TECHNOLOGY</p>
-                <div className="text-center">
-                  <div className="d-flex">
-                    <span>
-                      <img className="" src={quatation} alt="" />
-                    </span>
-                    <p className="textWhite">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
-                    </p>
-                  </div>
-                  <div className="icon-transform-effect">
-                    <img src={John} alt="" />
-                  </div>
-                  <h3 className="text-white">JOHN SMITH</h3>
-                  <h6 className="textWhite">Founder of Awesomeux Technology</h6>
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

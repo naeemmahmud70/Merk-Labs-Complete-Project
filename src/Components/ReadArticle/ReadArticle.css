@@ -13,19 +13,20 @@
   font-size: 25px;
 }
 
-.arrow-btn{
+.arrow-btn {
   border: 0;
   background: rgba(255, 255, 255, 0.04);
   padding: 10px 20px;
   border-radius: 300px;
   margin-right: 10px;
 }
-.circle-btn{
+
+.circle-btn {
   border: 1px solid white;
 }
 
 @media only screen and (min-width: 520px) {
- 
+
   .margin-Left {
     margin-left: 100px;
     position: relative;
@@ -38,6 +39,7 @@
     margin-bottom: -150px;
     margin-top: -100px;
   }
+
   .articleImg {
     margin-top: -100px;
     margin-left: -100px;
@@ -46,20 +48,21 @@
 }
 
 .margin-Left {
-width: 90%;
+  width: 80%;
 }
 
 @media only screen and (max-width: 768px) {
-  #blog{
+  #blog {
     margin-top: 100px;
   }
-  .neon4{
+
+  .neon4 {
     margin-top: -300px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .article-text{
+  .article-text {
     width: 50%;
   }
 }

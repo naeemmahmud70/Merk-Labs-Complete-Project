@@ -9,7 +9,7 @@ const Footer = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container MarginTop">
+    <div className="MarginTop">
       <div className="row mt-5 p-4">
         <div data-aos="fade-up" className="col-md-3 merka-flex">
           <div>

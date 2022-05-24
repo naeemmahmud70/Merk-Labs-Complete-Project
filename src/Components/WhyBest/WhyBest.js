@@ -34,7 +34,7 @@ const WhyBest = () => {
     },
   ];
   return (
-    <div id="service" className="container my-5">
+    <div id="service" className="my-5">
       <div className="text-center">
         <p className="why">Why</p>
         <h3 className="header-text">WE ARE THE BEST?</h3>

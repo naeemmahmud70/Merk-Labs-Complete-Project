@@ -21,7 +21,7 @@ const ReadArticle = () => {
 
       <div className="d-flex justify-content-end">
         <div className="row article-bg shadow margin-Left">
-          <div data-aos="fade-down-right" className="col-lg-6 col-md-8 img-transform-effect">
+          <div data-aos="fade-down-right" className="col-lg-6 col-md-8  img-transform-effect">
             <img className="img-fluid articleImg" src={articleImg} alt="" />
           </div>
 

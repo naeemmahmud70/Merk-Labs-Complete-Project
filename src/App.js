@@ -25,20 +25,42 @@ function App() {
       <MainHeader></MainHeader>
       <div className="container-fluid">
         <Counting></Counting>
-        <Defi></Defi>
-        <Dapps></Dapps>
-        <Audit></Audit>
-        <Expert></Expert>
-        <Smart></Smart>
-        <LaunchPad></LaunchPad>
+        <div className="d-flex justify-content-center">
+          <div className="container-width">
+            <Defi></Defi>
+            <Dapps></Dapps>
+            <Audit></Audit>
+            <Expert></Expert>
+            <Smart></Smart>
+            <LaunchPad></LaunchPad>
+          </div>
+        </div>
+
         <ReadArticle></ReadArticle>
-        <OurTeam></OurTeam>
-        <Projects></Projects>
+        
+        <div className="d-flex justify-content-center">
+          <div className="container-width-middle">
+            <OurTeam></OurTeam>
+            <Projects></Projects>
+          </div>
+        </div>
+
         <JoinUs></JoinUs>
-        <WhyBest></WhyBest>
+
+        <div className="d-flex justify-content-center">
+          <div className="container-width-middle">
+            <WhyBest></WhyBest>
+          </div>
+        </div>
+
         <ClientReview></ClientReview>
-        <Contact></Contact>
-        <Footer></Footer>
+
+        <div className="d-flex justify-content-center">
+          <div className="container-width-middle">
+            <Contact></Contact>
+            <Footer></Footer>
+          </div>
+        </div>
       </div>
     </div>
   );

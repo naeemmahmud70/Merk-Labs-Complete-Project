@@ -9,7 +9,7 @@ const OurTeam = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container team MarginTop">
+    <div className="team MarginTop">
       <div className="row p-4">
         <div className="col-md-6">
           <p className="our-team">Our Team</p>

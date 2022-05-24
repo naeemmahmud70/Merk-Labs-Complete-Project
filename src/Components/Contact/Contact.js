@@ -10,7 +10,7 @@ const Contact = () => {
     AOS.init({ duration: 2000 });
   }, []);
   return (
-    <div className="container">
+    <div className="p-4">
       <span className="animation-border"></span>
       <div className="row mt-5">
         <div className="col-lg-6">

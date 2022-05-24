@@ -16,7 +16,7 @@ const Counting = ({ className, ...rest }) => {
   }, []);
 
   return (
-    <div className="blue-bg-color row">
+    <div className="blue-bg-color row blur-bg">
       <div
         data-aos="fade-up"
         className="company-bg text-center p-5 Zindex btn-transform-effect"
@@ -30,12 +30,13 @@ const Counting = ({ className, ...rest }) => {
         <div className="d-flex justify-content-end dots">
           <img className="img-fluid" src={dots} alt="" />
         </div>
-        <div className="row  header-height p-4">
+        <div className="d-flex justify-content-center">
+        <div id="counting-width" className="row header-height p-4">
           <div data-aos="fade-right" className="col-lg-8 m-bottom">
             <h1 className="top-header-text">
               We provide The Best To Protect Your Users And Their Investments
             </h1>
-            <p className="header-text-style just justifyText">
+            <p className="header-text-style justifyText">
               Merklabs is a reputed name in the field of blockchain technology
               encompassing all the segments of this revolutionary field.
               Pioneering the essence of blockchain security and audits, we
@@ -44,7 +45,7 @@ const Counting = ({ className, ...rest }) => {
             </p>
           </div>
 
-          <div data-aos="fade-up" className="col-lg-4 glass-bg">
+          <div data-aos="fade-up" id="counting-container" className="col-lg-4 glass-bg">
             <div className="m-bottom">
               <div className="d-flex count-position">
                 <div>
@@ -142,6 +143,7 @@ const Counting = ({ className, ...rest }) => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

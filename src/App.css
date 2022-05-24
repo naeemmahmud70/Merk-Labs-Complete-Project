@@ -6,3 +6,15 @@
 body {
     overflow-x: hidden;
 }
+
+@media only screen and (min-width: 1441px) {
+    .container-width{
+      max-width: 90%;
+    }
+  }
+
+  @media only screen and (min-width: 1441px) {
+    .container-width-middle{
+      max-width: 80%;
+    }
+  }
