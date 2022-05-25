@@ -21,11 +21,11 @@ const ReadArticle = () => {
 
       <div className="d-flex justify-content-end">
         <div className="row article-bg shadow margin-Left">
-          <div data-aos="fade-down-right" className="col-lg-6 col-md-8  img-transform-effect">
-            <img className="img-fluid articleImg" src={articleImg} alt="" />
+          <div data-aos="fade-down-right" className="col-lg-7 col-md-9 col-xxl-5  img-transform-effect">
+            <img id="article-image" className="img-fluid articleImg" src={articleImg} alt="" />
           </div>
 
-          <div className="col-lg-6 p-4">
+          <div className="col-lg-5 col-xxl-7  p-4">
             <div className="article-text">
               <p className="text-white article">Read Article</p>
               <h5 className="text-white my-4">

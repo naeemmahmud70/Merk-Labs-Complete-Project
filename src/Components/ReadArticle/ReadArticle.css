@@ -66,3 +66,9 @@
     width: 50%;
   }
 }
+
+@media only screen and (min-width: 1500px) {
+  .article-text {
+    margin-left: -15%;
+  }
+}
